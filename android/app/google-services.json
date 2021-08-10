@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "160058076683",
+    "project_id": "time-schedular",
+    "storage_bucket": "time-schedular.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160058076683:android:4dd84f53fe236adae8210e",
+        "android_client_info": {
+          "package_name": "com.regalsystem.timescheduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160058076683-i4vfk41s39e82pq5emehrmv290d6uk5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzOZF6DeTpb4k5OQTT1clbwkNgNbnppSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160058076683-i4vfk41s39e82pq5emehrmv290d6uk5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
