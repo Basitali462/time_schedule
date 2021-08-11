@@ -30,8 +30,27 @@ class _AlarmState extends State<Alarm> {
       stream: alarmProvider.fetchAlarmAsStream(),
       builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
         if(!snapshot.hasData || snapshot.data.docs.isEmpty){
-          print('no data in snapshot');
-          return Center(child: Text('no Alarm added yet'));
+          return Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.alarm_add,
+                  size: 60,
+                  color: kYellowColor,
+                ),
+                SizedBox(height: 20,),
+                Text(
+                  'No Alarm Added',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: kPurpleColor,
+                  ),
+                ),
+              ],
+            ),
+          );
         }
         alarms = snapshot.data.docs.map((doc) => ModelAlarm.fromMap(doc.data(), doc.id)).toList();
         return ListView.separated(

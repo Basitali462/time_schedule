@@ -41,6 +41,8 @@ dependencies:
   fluttertoast: ^8.0.6
   google_mobile_ads: ^0.12.1+1
   flutter_launcher_icons: ^0.9.0
+  carousel_slider: ^4.0.0
+  smooth_page_indicator: ^0.2.3
   flutter:
     sdk: flutter
 
